@@ -66,6 +66,14 @@ class _PostListScreenState extends State<PostListScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
+                          '● USER ID: ${post.userId} ●',
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
                           '${post.id}. ${post.title}',
                           style: const TextStyle(
                             fontSize: 18,
